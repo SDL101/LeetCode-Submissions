@@ -7,7 +7,7 @@ class Solution:
 #         check if target minus num exists in the hashmap
 #         if not, add num to hashmap and continue loop 
 #         when target minus num is found as a key in hashmap 
-#         return two things, the index of num, and the value corresponding to the key of               target minus num (which holds the index)
+#         return two things, the index of num, and the value corresponding to the key of target minus num (which holds the index)
     
         hashmap = {}
         for i, n in enumerate(nums):
