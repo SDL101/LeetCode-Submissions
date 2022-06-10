@@ -9,9 +9,9 @@ class Solution:
         
         create empty set
         iterate through nums array
-        if value is in set
-        return true
-        if not, move to next element and repeat
+        check if value is in set
+        return true if so
+        if not in set, move to next element and repeat
         if reach end of array and no match 
         return false
         '''
