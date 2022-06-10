@@ -1,12 +1,13 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
     
-#         create empty hashmap with values as keys, index as corresponding values
+#         create empty hashmap, to have given array values added as keys, 
+#         their corresponding index as the keys values
 #         iterate through the array nums
 #         check if target minus num exists in the hashmap
-#         if not, add num to hashmap and iterate pointer 
-#         to next element
-#         return index of element subtracted and index of resulting value
+#         if not, add num to hashmap and continue loop 
+#         when target minus num is found as a key in hashmap 
+#         return two things, the index of num, and the value corresponding to the key of               target minus num (which holds the index)
     
         hashmap = {}
         for i, n in enumerate(nums):
