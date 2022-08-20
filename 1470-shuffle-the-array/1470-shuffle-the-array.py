@@ -25,7 +25,7 @@ class Solution:
             while n < len(nums):
                 shuffled_nums.append(nums[n])
                 n +=1
-                break 
+                break
         return shuffled_nums
     
                 
