@@ -16,6 +16,7 @@ class Solution:
         
         #nums = [2,5,1,3,4,7]
         #n = 3
+            
         temp = n 
         x = 0
         shuffled_nums = []
