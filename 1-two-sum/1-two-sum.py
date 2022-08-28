@@ -1,18 +1,24 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-    
-#         create empty hashmap, to have given array values added as keys, 
-#         their corresponding index as the keys values
-#         iterate through the array nums
-#         check if target minus num exists in the hashmap
-#         if not, add num to hashmap and continue loop 
-#         when target minus num is found as a key in hashmap 
-#         return two things, the index of num, and the value corresponding to the key of target minus num (which holds the index)
-    
-        hashmap = {}
-        for i, n in enumerate(nums):
-            sec_num = target - n
-            if sec_num in hashmap:
-                return (hashmap[sec_num], i)
-            hashmap[n] = i
         
+#         nums = [2,7,11,15]
+#         target = 22
+
+#create empty hashmap - keys as nums and values as indeces 
+#loop through my nums array
+#take my target val and subtract num from each iteration of the loop 
+#check if resulting value is in my hashmap 
+#if not, add the num
+#if it is, return the value index and the num iteration index
+
+        hashy_map = {}
+        index_array = []
+        for index, num in enumerate(nums):
+            diff = target - num
+            if diff in hashy_map:
+                index_array.append(index)
+                index_array.append(hashy_map[diff])
+            else:
+                hashy_map[num] = index
+                
+        return index_array
