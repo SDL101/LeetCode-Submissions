@@ -11,21 +11,30 @@ class Solution:
         #if false, return false
         #once looping is complete, return true if stack is empty
         #return false if stack contains any elements
-        
-        brackMap = {  ")":"(",
-                      "}":"{",
-                      "]":"["}
+
+        brackMap = {")":"(", 
+                    "]":"[",
+                    "}":"{"}
         
         brackStack = []
         
+        # s = "()[]{}"
+        #Output: true
+        
+        # s = "(]"
+        #Output: false
+        
         for char in s:
-            if char in brackMap:
+            if char not in brackMap.keys():
+                brackStack.append(char)
+            elif char in brackMap.keys():
                 if brackStack and brackStack[-1] == brackMap[char]:
                     brackStack.pop()
-                else: 
+                else:
                     return False
-            else:
-                brackStack.append(char)
             
-        return True if not brackStack else False
-    
+        if brackStack == []:
+            return True
+        else:
+            return False
+        
