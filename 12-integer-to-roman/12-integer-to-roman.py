@@ -21,10 +21,9 @@ class Solution:
                     } 
 
         for each in roman_map.keys():
-            if num - roman_map[each] >= 0:
-                freq = num // roman_map[each]
-                num = num % roman_map[each]   
-                for i in range(freq):
-                    roman_output = roman_output + each 
+            while num - roman_map[each] >= 0:
+                # freq = num // roman_map[each]
+                num = num - roman_map[each]   
+                roman_output = roman_output + each 
 
         return roman_output
