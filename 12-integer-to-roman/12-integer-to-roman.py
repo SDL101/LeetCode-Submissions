@@ -21,8 +21,9 @@ class Solution:
                     } 
 
         for each in roman_map.keys():
-            while num - roman_map[each] >= 0:
-                num = num - roman_map[each]   
-                roman_output = roman_output + each 
+            if num - roman_map[each] >= 0:
+                count = num // roman_map[each]
+                num = num - (roman_map[each] * count) 
+                roman_output = roman_output + (each * count)
 
         return roman_output
