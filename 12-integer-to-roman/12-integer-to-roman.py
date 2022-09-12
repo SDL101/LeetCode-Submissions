@@ -16,13 +16,10 @@ class Solution:
                     "CM":900,
                      "M":1000
                     }
-        
+
         for roman in reversed(symValMap):
             if num - symValMap[roman] >= 0:
-                symCount = num // symValMap[roman]
-                romanOut = romanOut + (roman * symCount)
-                num = num - (symValMap[roman]* symCount)
+                count = num // symValMap[roman]
+                num = num - (symValMap[roman] * count)
+                romanOut = romanOut + (roman * count)
         return romanOut
-                
-                
-                
