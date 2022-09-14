@@ -1,11 +1,11 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        valIndexMap = {}
+        visitedMap = {}
         
         for index, num in enumerate(nums):
-            value = target - num
-            if value in valIndexMap:
-                return valIndexMap[value], index
+            val = target - num
+            if val in visitedMap:
+                return index, visitedMap[val]
             else:
-                valIndexMap[num] = index 
-                
+                visitedMap[num] = index
+        
