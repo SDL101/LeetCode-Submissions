@@ -6,8 +6,6 @@ class Solution:
         
         brack_stack = []
         
- 
-        # s = "(]"
         for char in s:
             if char in closeToOpen.keys() and len(brack_stack) == 0:
                 return False
