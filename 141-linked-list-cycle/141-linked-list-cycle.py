@@ -6,13 +6,14 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        visNodeMap = {}
-        
-        while head:
-            if head.next is None:
-                return False
-            elif head in visNodeMap:
-                return True
-            visNodeMap[head] = 0
-            head = head.next
-        
+        if head is None or head.next is None:
+            return False
+        fast = head
+        slow = head
+        while fast.next and fast.next.next:
+            slow = slow.next 
+            fast = fast.next.next
+            if slow == fast:
+                return True 
+        return False
+            
