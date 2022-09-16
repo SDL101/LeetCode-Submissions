@@ -2,8 +2,6 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
         resLen = 0
         
-        #fabba
-        
         for i in range(len(s)):
             
             l, r = i, i 
