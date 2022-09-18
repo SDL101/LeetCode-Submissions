@@ -1,16 +1,29 @@
+
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        if image is None or image[sr][sc] == color:
+        if image[sr][sc] == color:
             return image
-        self.fill(image, sr, sc, image[sr][sc], color)
+        
+        original = image[sr][sc]
+        # 1
+        
+        self.fill(image, sr, sc, original, color)
         return image
         
-    def fill(self, image, sr, sc, original_color, color):
-        if sr < 0 or sc < 0 or sr >= len(image) or sc >= len(image[0]) or image[sr][sc] != original_color:
-            return 
+        
+    def fill(self, image, sr, sc, original, color):
+        print()
+        if image[sr][sc] != original:
+            
+            return
+        
         image[sr][sc] = color
-
-        self.fill(image, sr-1, sc, original_color, color) #UP
-        self.fill(image, sr+1, sc, original_color, color) #DOWN
-        self.fill(image, sr, sc-1, original_color, color) #LEFT
-        self.fill(image, sr, sc+1, original_color, color) #RIGHT
+        if sr > 0:
+            self.fill(image, sr -1, sc, original, color)  #up
+        if sr + 1 < len(image): 
+            self.fill(image, sr + 1, sc, original, color) #down
+        if sc > 0:
+            self.fill(image, sr, sc -1, original, color)  #left
+        if sc + 1< len(image[0]):
+            self.fill(image, sr, sc + 1, original, color) #right
+            
