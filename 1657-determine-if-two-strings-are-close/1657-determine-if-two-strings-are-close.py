@@ -14,7 +14,3 @@ class Solution:
 
         # Compare counts of values
         return count1 == count2    
-        
-        
-            
-            
