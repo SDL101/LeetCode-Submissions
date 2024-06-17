@@ -1,14 +1,13 @@
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
-        altList = [0]
         count = 0
-        maxGain = 0
+        maxAlt = 0
         
         for netgain in gain:
-            count += netgain
-            maxGain = max(maxGain, count)
-            altList.append(count)
+            count += netgain 
+            if count > maxAlt:
+                maxAlt = count
             
-        return maxGain
+        return maxAlt
             
             
