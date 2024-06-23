@@ -1,6 +1,6 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
-        left = right = minJumps = furthest = 0
+        left = right = minJumps = 0
         
         while right < len(nums) - 1:
             furthest = 0
