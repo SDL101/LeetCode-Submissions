@@ -9,7 +9,6 @@ class Solution {
             
             for(int i = left; i < right + 1; i++){
                 furthest = Math.max(furthest, i + nums[i]);
-                
             }
             left = right + 1;
             right = furthest;
