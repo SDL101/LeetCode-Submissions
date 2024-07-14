@@ -1,15 +1,18 @@
 class Solution:
     def reverseParentheses(self, s: str) -> str:
-        res = []
-        indexCount = []
+        
+        stack = []
+        chars = []
         
         for char in s:
             if char == "(":
-                indexCount.append(len(res))
+                stack.append(len(chars))
             elif char == ")":
-                start = indexCount.pop()
-                res[start:] = res[start:][::-1]
+                start = stack.pop()
+                chars[start:] = chars[start:][::-1]
             else:
-                res.append(char)
+                chars.append(char)
+                
+        return ''.join(chars)
+    
             
-        return ''.join(res)
