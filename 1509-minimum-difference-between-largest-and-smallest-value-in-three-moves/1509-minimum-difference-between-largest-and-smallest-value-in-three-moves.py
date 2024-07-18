@@ -8,10 +8,8 @@ class Solution:
         if len(nums) <= 4:
             return 0
           
-        FourSmallest = sorted(heapq.nsmallest(4, nums))
+        FourSmallest = (heapq.nsmallest(4, nums))
         FourLargest = sorted(heapq.nlargest(4, nums))
-        
-        print(FourSmallest, "\n", FourLargest)
         
         minDiff = float('inf')
         for i in range(4):
