@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/SDL101/LeetCode-Submissions/tree/master/0036-valid-sudoku) |
+| [0238-product-of-array-except-self](https://github.com/SDL101/LeetCode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0890-lemonade-change](https://github.com/SDL101/LeetCode-Submissions/tree/master/0890-lemonade-change) |
 ## Greedy
 |  |
@@ -20,4 +21,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/SDL101/LeetCode-Submissions/tree/master/0036-valid-sudoku) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/SDL101/LeetCode-Submissions/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
