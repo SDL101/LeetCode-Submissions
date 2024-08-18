@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/SDL101/LeetCode-Submissions/tree/master/0036-valid-sudoku) |
+| [0049-group-anagrams](https://github.com/SDL101/LeetCode-Submissions/tree/master/0049-group-anagrams) |
 | [0238-product-of-array-except-self](https://github.com/SDL101/LeetCode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0271-encode-and-decode-strings](https://github.com/SDL101/LeetCode-Submissions/tree/master/0271-encode-and-decode-strings) |
 | [0347-top-k-frequent-elements](https://github.com/SDL101/LeetCode-Submissions/tree/master/0347-top-k-frequent-elements) |
@@ -19,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/SDL101/LeetCode-Submissions/tree/master/0036-valid-sudoku) |
+| [0049-group-anagrams](https://github.com/SDL101/LeetCode-Submissions/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/SDL101/LeetCode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## Matrix
 |  |
@@ -31,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/SDL101/LeetCode-Submissions/tree/master/0049-group-anagrams) |
 | [0271-encode-and-decode-strings](https://github.com/SDL101/LeetCode-Submissions/tree/master/0271-encode-and-decode-strings) |
 ## Design
 |  |
@@ -43,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/SDL101/LeetCode-Submissions/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/SDL101/LeetCode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
