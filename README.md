@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/SDL101/LeetCode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0271-encode-and-decode-strings](https://github.com/SDL101/LeetCode-Submissions/tree/master/0271-encode-and-decode-strings) |
 | [0347-top-k-frequent-elements](https://github.com/SDL101/LeetCode-Submissions/tree/master/0347-top-k-frequent-elements) |
+| [0792-binary-search](https://github.com/SDL101/LeetCode-Submissions/tree/master/0792-binary-search) |
 | [0890-lemonade-change](https://github.com/SDL101/LeetCode-Submissions/tree/master/0890-lemonade-change) |
 ## Greedy
 |  |
@@ -72,4 +73,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/SDL101/LeetCode-Submissions/tree/master/0347-top-k-frequent-elements) |
+## Binary Search
+|  |
+| ------- |
+| [0792-binary-search](https://github.com/SDL101/LeetCode-Submissions/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->
