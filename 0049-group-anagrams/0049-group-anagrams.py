@@ -7,7 +7,7 @@ class Solution:
             for char in word:
                 mappedIndex = (ord(char) - 97)
                 currBucket[mappedIndex] = currBucket[mappedIndex] + 1
-            bucketStr = str(currBucket)
+            bucketStr = tuple(currBucket)
             if bucketStr in bucketMap:
                 bucketMap[bucketStr].append(word)
             else:
