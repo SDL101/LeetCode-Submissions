@@ -23,7 +23,6 @@ class Solution:
                     maxCountIndex = j
             countArr[maxCountIndex] = -1
             res.append(numArr[maxCountIndex])
-            # print(countArr, numArr)
 
         return res
             
