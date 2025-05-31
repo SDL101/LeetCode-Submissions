@@ -1,15 +1,14 @@
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:    
-        res = [0 for _ in range(len(nums))]
-        res[0] = 1
-
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        leftPass, rightPass = [1] * len(nums), [1] * len(nums)
+        prod = 1
         for i in range(1, len(nums)):
-            res[i] = nums[i-1] * res[i-1]
-
-        rp = 1
-        for i in range(len(nums)-1, -1, -1):
-            res[i] *= rp
-            rp *= nums[i]
-
-        return res
-       
+            leftPass[i] = leftPass[i-1] * nums[i-1] 
+            
+        for i in range(len(nums)-2, -1, -1):
+            prod = prod * nums[i+1]
+            rightPass[i] = prod
+        
+        for i in range(len(nums)):
+            leftPass[i] = leftPass[i] * rightPass[i]
+        return leftPass 
