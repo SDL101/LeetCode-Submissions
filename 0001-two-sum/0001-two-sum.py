@@ -12,8 +12,11 @@ class Solution:
             if diff not in numMap:
                 numMap[num] = [i]
             # 5. Otherwise, the value we need (which is diff) has been visited, 
-            # we need to ret: [curr idx in loop, corresponding value of diff's key in map which is its idx]
+            # so we retun: [curr idx in loop, corresponding value of diff's key in map which is its idx]
             else:
                 numMap[diff].append(i)
                 return numMap[diff]
 
+# Time Complexity: O(n) - We iterate over the nums array once i believe, i am not sure if we are also iterating over it another time when we first create the hashmap (numMap) or how that hashmap function works at a lower level in the code. Would still be linear either way and should be either O(n) or O(2n)
+
+# Space Complexity: O(n) - Our hashmap scales roughly linearly with the size of nums
