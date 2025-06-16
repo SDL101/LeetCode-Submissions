@@ -16,5 +16,5 @@ class Solution:
         
         return maxProfit
 
-        # Time Complexity:
-        # Space Complexity:
+        # Time Complexity:   O(n) iterating over array with 2 ptrs and stopping when right ptr reaches end
+        # Space Complexity:  O(1) just using 2 ptrs so constant space 
