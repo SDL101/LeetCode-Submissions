@@ -1,13 +1,18 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # create a new string for the output result
-        res = ''
-        # loop through each char in the string
-        for char in s:
-            # if the char is alphanumeric (A-Z, a-z, 0-9)
-            if char.isalnum():
-                # convert to lowercase and then add to the output
-                res += char.lower()
-        # return the comparison of the forward and backward result string
-        return res == res[::-1]
-        
+        l, r = 0, len(s)-1
+        while l < r:
+            leftLowered, rightLowered = s[l].lower(), s[r].lower()
+            isLeftAlnum, isRightAlnum = s[l].isalnum(), s[r].isalnum()
+
+            if isLeftAlnum and not isRightAlnum:
+                r -= 1
+            elif isRightAlnum and not isLeftAlnum:
+                l += 1
+            elif (isLeftAlnum and isRightAlnum) and (leftLowered != rightLowered):
+                return False
+            else: 
+                l += 1
+                r -= 1
+        return True
+         
