@@ -6,7 +6,6 @@ class Solution:
         l, r = 0,  0
         freqSet = set()
         while r < len(s):
-            print(freqSet)
             if s[r] not in freqSet:
                 freqSet.add(s[r])
                 r += 1
