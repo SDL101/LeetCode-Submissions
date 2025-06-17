@@ -1,7 +1,5 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # "a b c"
-        #  l r
         maxSubLen = 0
         l, r = 0,  0
         freqSet = set()
