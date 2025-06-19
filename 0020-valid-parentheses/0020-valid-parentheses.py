@@ -13,7 +13,7 @@ class Solution:
         }
 
         # 2. loop over the input string and add to stack if open bracket, 
-        #    else pop from stack if closing bracket and verify using hashmap
+        #    else pop from stack top if closing bracket (or ret false if stack empty) and verify using hashmap
         for bracket in s:
             if bracket in brackMap:
                 brackStack.append(bracket)
@@ -24,4 +24,8 @@ class Solution:
                 if brackMap[leftBrack] != bracket:
                     return False
 
+        # 3. ret False if we still have unclosed brackets, True if stack is empty at the end
         return False if len(brackStack) != 0 else True
+
+    # Time Complexity:  O(n) - we loop through every char in input string, except if we return early. Scales linearly with len of input str
+    # Space Complexity: O(n) - our stack scales linearly with the size of the input str, hashmap is constant space
