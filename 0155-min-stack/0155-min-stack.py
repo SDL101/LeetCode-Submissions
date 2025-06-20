@@ -21,6 +21,10 @@ class MinStack:
 
     def getMin(self) -> int:
         return self.minStack[-1]
+
+
+# Time Complexity: O(1) for all operations
+# Space Complexity: O(2n) = O(n) since we have two lists that scale linearly with the input size
  
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
