@@ -60,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Design
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/SDL101/LeetCode-Submissions/tree/master/0225-implement-stack-using-queues) |
 | [0271-encode-and-decode-strings](https://github.com/SDL101/LeetCode-Submissions/tree/master/0271-encode-and-decode-strings) |
 ## Divide and Conquer
 |  |
@@ -119,9 +120,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/SDL101/LeetCode-Submissions/tree/master/0020-valid-parentheses) |
+| [0225-implement-stack-using-queues](https://github.com/SDL101/LeetCode-Submissions/tree/master/0225-implement-stack-using-queues) |
 | [0682-baseball-game](https://github.com/SDL101/LeetCode-Submissions/tree/master/0682-baseball-game) |
 ## Simulation
 |  |
 | ------- |
 | [0682-baseball-game](https://github.com/SDL101/LeetCode-Submissions/tree/master/0682-baseball-game) |
+## Queue
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/SDL101/LeetCode-Submissions/tree/master/0225-implement-stack-using-queues) |
 <!---LeetCode Topics End-->
