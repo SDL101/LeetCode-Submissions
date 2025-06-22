@@ -18,3 +18,6 @@ class Solution:
 
         backtrack(0,0)
         return res
+
+    # Time Complexity: O( (4^n)/sqrt(n) )
+    # Space Complexity: O(n) scales linearly with the size of n
