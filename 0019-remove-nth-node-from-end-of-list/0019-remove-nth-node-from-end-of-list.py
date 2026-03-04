@@ -11,7 +11,7 @@ class Solution:
         dummyHead.next = head
         l, r = dummyHead, dummyHead
         # position right ptr n positions ahead
-        for each in range(n):
+        for _ in range(n):
             r = r.next
         # slide both ptrs until r reaches last node
         while r.next:
@@ -22,4 +22,6 @@ class Solution:
         # return head of list
         return dummyHead.next
         
+# Time: O(n) - scales linearly with the number of nodes in the LL since we visit each node
+# Space: O(1) - not including input LL, only creating a single dummy head node and ptrs and returning orig LL
 
