@@ -5,21 +5,27 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        
-        dummy = ListNode()
-        dummy.next = head
-        curr = dummy
-        slow, fast = curr, curr 
-        
+        # create dummy head, dummy head ptr, and 2 ptrs for sliding, start right pointer over n times, then slide both ptrs together until right.next is None. remove by setting left.next = right. return dummy head.next
+
+        # head = [X, 1,  2,  3,  4,  5], n = 2
+                            #  ^       ^
+        # head = [X, 1], n = 1
+            
+                #  ^  ^
+
+        dummyHead = ListNode()
+        dummyHead.next = head
+        l, r = dummyHead, dummyHead
+        # position right ptr n positions ahead
         for each in range(n):
-            fast = fast.next
+            r = r.next
+        # slide both ptrs until r reaches last node
+        while r.next:
+            l = l.next
+            r = r.next
+        # remove nth node
+        l.next = l.next.next
+        # return head of list
+        return dummyHead.next
         
-        while fast:
-            fast = fast.next
-            if fast:
-                slow = slow.next
-        
-        slow.next = slow.next.next
-    
-        return dummy.next
-    
+
