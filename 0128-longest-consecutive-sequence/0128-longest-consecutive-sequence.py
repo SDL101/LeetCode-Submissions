@@ -1,20 +1,22 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        # use a set to store all the numbers
+        # create a set with nums
+        # we know the max len of a sequence is the len of nums
+        # iterate over nums arr and check if the value + 1 exists in set
+        # while it does exist inc the maxConsecLen var by 1, else continue to next num
+        # when we finish processing the nums arr, return the maxConsecLen count
+
         numSet = set(nums)
-        # iterate over the nums array and if it's not the start of a sequence (i.e. num - 1 is in set)
-        # then skip over it and proceed to start counting upward in loop only when at the start of a sequence
-        # [100, 4, 200, 1, 3, 2]
-
-        maxCount = 0
+        maxConsecLen = 0
+        if len(nums) == 0:
+            return maxConsecLen
         for num in numSet:
+            currConsecLen = 1
             if (num - 1) not in numSet:
-                count = 1
-                while (num + 1) in numSet:
-                    count += 1
-                    num += 1
-                maxCount = max(maxCount, count)
-        return maxCount
-
-       
+                startOfSeq = num
+                while (startOfSeq + 1) in numSet:
+                    currConsecLen += 1
+                    startOfSeq += 1
+                maxConsecLen = max(currConsecLen, maxConsecLen)
+        return maxConsecLen
 
