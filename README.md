@@ -149,4 +149,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/SDL101/LeetCode-Submissions/tree/master/0019-remove-nth-node-from-end-of-list) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/SDL101/LeetCode-Submissions/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
